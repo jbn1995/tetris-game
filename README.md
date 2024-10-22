@@ -11,6 +11,18 @@
 - Create a 3-node Kubernetes cluster using Kind:
   ```bash
   cd kind-cluster/
+  ```
+# Install Kind & Kubectl & Docker
+- Install Docker,Kind & Kubectl 
+  ```bash
+  # Change to executable permit to this shell-script files
+  ./install_docker
+  ./install_kind.sh
+  ./install_kubectl.sh
+  ```
+- Create a 3-node Kubernetes cluster using Kind:
+  ```bash
+  cd kind-cluster/
   kind create cluster --config=config.yml --name=mycluster
   ```
 
