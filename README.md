@@ -77,7 +77,7 @@
   kubectl get svc -n argocd
   ```
 
-- Expose Argo CD server using NodePort:
+- Expose Argo CD server using NodePort, change service clasterIP to NodePort:
   ```bash
   kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "NodePort"}}'
   ```
